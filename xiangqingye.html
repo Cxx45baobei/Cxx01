@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/xiangqingye.css" />
+		<script src="js/my.js"></script>
+		<script type="text/javascript" src="js/ajax.js"></script>
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	</head>
+
+	<body>
+		<!--头部盒子-->
+		<div id="headerBox"></div>
+
+		<div id="sus">
+			<div class="sus_top">
+				<div class="text_f3 fl">
+					<img src="img/jxtj-d869de79ec.png" alt="">
+				</div>
+				<ul class="text_list fl">
+					<li>9块9包邮</li>
+					<li>排行榜</li>
+					<li>信息资讯</li>
+					<li>手机版</li>
+				</ul>
+				<div class="sus_search fl">
+					<input type="text" placeholder="请输入关键词">
+					<i class="glass_f2">
+                    <img src="img/search-btn-1e49dbf095.png" alt="">
+                </i>
+				</div>
+			</div>
+		</div>
+		<div class="good_main">
+			<div class="main_left fl" id="main_left">
+				<div class="main_logo fl">
+					<img id="picc1" src="" alt="">
+					<div class="mask" id="mask"></div>
+				</div>
+				<div class="main_text fl">
+					<h1 id="txt0"></h1>
+					<h1 id="txt1"></h1>
+<h1 id="txt00"></h1>
+					
+					<span class="txt33">包邮</span>
+					<p class="txt44" id="txt2"></p>
+					<p class="txt55" style="background: #f3f3f3;margin: 10px 0;">￥
+						<a id="txt3"></a>
+					</p>
+					<p style="color: gray;">配送：<a style="width:100px;display:inline-block;line-height:20px;border: 1px solid gray;">请选择省市区</a></p>
+					<p style="color: gray; margin-top: 10px;">运费：<a>￥10 （订单满288免运费） 	</a></p>
+					<ul id="chimalis">
+						<li style="border: none;text-align: left;padding: 0;margin-top: 10px;">尺码：</li>
+						<li class="youkuang">S(160/68A)</li>
+						<li class="youkuang">M(165/72A)</li>
+						<li class="youkuang">L(170/76A)</li>
+						<li class="youkuang">XL(175/80A)</li>
+					</ul>
+					<p id="jiajian">数量：<a>-</a><a>1</a><a>+</a></p>
+					<ul id="piclis">
+						<li><img src="" / id="piclis_1"></li>
+						<li><img src="" / id="piclis_2"></li>
+						<li><img src="" / id="piclis_3"></li>
+					</ul>
+				</div>
+				<div class="logo-2"><img id="picc2" src="" alt=""></div>
+
+				<div class="btnBox">
+					<button id="shoppingjiaru">加入购物车</button>
+					<button id="shoppingjinru">进入购物车</button>
+				</div>
+			</div>
+
+		</div>
+
+		<!--详情图片开始-->
+		<div class="like_bar">
+			<div class="like">
+				<div class="t_l fl">
+					商品详情
+				</div>
+				<div class="t_c fl"></div>
+			</div>
+		</div>
+		<div class="xiangqingpic_wrap">
+			<div class="xiangqingpic">
+				<img src="" / id="tu1">
+				<img src="" / id="tu2">
+				<img src="" / id="tu3">
+			</div>
+		</div>
+		<!--详情图片结束-->
+
+		<div class="like_bar" style="margin-top: 30px;">
+			<div class="like">
+				<div class="t_l fl">
+					排行榜
+				</div>
+				<div class="t_c fl"></div>
+			</div>
+		</div>
+		<!--商品列表开始-->
+		<div class="good_wrap">
+			<div class="good">
+				<ul id="list">
+					<!--<li>
+				<img src="img/TB13E_ycDnI8KJjy0FfXXcdoVXa_!!0-item_pic.jpg_400x400" alt="">
+				<p><span>包邮</span><span>保湿收缩毛孔vc水爽肤水</span></p>
+				<p><span>现价￥38.5</span><span>销量 355555</span></p>
+				<p><span>券后价：￥</span><span>7.5</span><span>立即抢购</span></p>
+			</li>-->
+
+				</ul>
+			</div>
+		</div>
+
+		<!--尾部盒子-->
+		<div id="footerBox"></div>
+		<script type="text/javascript" src="js/xiangqingye.js">
+		</script>
+
+		<script>
+			var large = document.getElementById('main_left');
+			var small = large.children[0];
+			var big = large.children[2];
+			var mask = small.children[1];
+			small.onmouseover = function() {
+				mask.style.display = "block";
+				big.style.display = "block";
+			}
+			small.onmouseout = function() {
+				mask.style.display = "none";
+				big.style.display = "none";
+			}
+			small.onmousemove = function(event) {
+				var event = event || window.event;
+				var pagex = event.pageX || event.clientX + scroll().left;
+				var pagey = event.pageY || event.clientY + scroll().top;
+				var x = pagex - small.parentNode.offsetLeft - mask.offsetWidth / 2;
+
+				var y = pagey - small.parentNode.offsetTop - mask.offsetHeight / 2;
+
+				if(x < 0) {
+					x = 0;
+				} else if(x > small.offsetWidth - mask.offsetWidth) {
+					x = small.offsetWidth - mask.offsetWidth;
+				}
+				if(y < 0) {
+					y = 0;
+				} else if(y > small.offsetHeight - mask.offsetHeight) {
+					y = small.offsetHeight - mask.offsetHeight;
+				}
+
+				mask.style.left = x + "px";
+				mask.style.top = y + "px";
+				var bigImg = big.children[0];
+
+				bigImg.style.marginLeft = -x * 2 + "px";
+				bigImg.style.marginTop = -y * 2 + "px";
+			}
+		</script>
+
+	</body>
+
+</html>

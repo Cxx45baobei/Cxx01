@@ -1,0 +1,291 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+/*头部文字开始*/
+
+.header_wrap {
+	width: 100%;
+	height: 36px;
+}
+
+.header {
+	width: 1100px;
+	height: 36px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 36px;
+	font-size: 14px;
+	font-family: "Microsoft YaHei";
+}
+
+
+/*头部文字结束*/
+
+
+/*头部搜索栏开始*/
+
+.header_top_wrap {
+	width: 100%;
+	height: 100px;
+	background: #FFF;
+}
+
+.header_top {
+	width: 1100px;
+	height: 100px;
+	margin: 0 auto;
+}
+
+.logo {
+	width: 176px;
+	height: 40px;
+	margin: 30px 0;
+	float: left;
+}
+
+.logo>img {
+	width: 176px;
+}
+
+.search {
+	width: 480px;
+	height: 40px;
+	border: 2px solid #FF6434;
+	border-radius: 5px;
+	position: relative;
+	margin: 30px 0 0 120px;
+	float: left;
+}
+
+.search>input {
+	width: 325px;
+	height: 35px;
+	outline: none;
+	line-height: 38px;
+	text-indent: 3em;
+	border: none;
+	margin-top: 2px;
+	float: left;
+}
+
+.search>button {
+	width: 100px;
+	height: 39px;
+	background: #FF6434;
+	outline: none;
+	border: none;
+	line-height: 36px;
+	text-align: center;
+	font-size: 18px;
+	color: #fff;
+	float: right;
+}
+
+.search>img {
+	width: 20px;
+	position: absolute;
+	left: 5px;
+	top: 50%;
+	margin-top: -10px;
+}
+
+.smalllogo {
+	float: right;
+	margin: 25px 0 0 65px;
+	color: gray;
+}
+
+.smalllogo>ul>li {
+	float: left;
+	width: 63px;
+	height: 51PX;
+	text-align: center;
+}
+
+.smalllogo>ul>li>img {
+	width: 30px;
+}
+
+
+/*头部搜索结束*/
+
+
+/*头部导航开始*/
+
+.nav_wrap {
+	width: 100%;
+	height: 40px;
+	background: #444444;
+}
+
+.nav {
+	width: 1100px;
+	height: 40px;
+	margin: 0 auto;
+}
+
+.nav_pic {
+	width: 220px;
+	height: 40px;
+	background: #FF472B;
+	position: relative;
+	float: left;
+}
+
+.nav_pic>img {
+	width: 78px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.nav_list {
+	float: left;
+}
+
+.nav_list>ul {
+	margin-left: 15px;
+}
+
+.nav_list li {
+	float: left;
+	padding: 0 30px;
+	text-align: center;
+	line-height: 40px;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.nav_list li:hover {
+	background: #FF472B;
+}
+
+.enter {
+	float: right;
+}
+
+.enter li {
+	float: left;
+	text-align: center;
+	line-height: 40px;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+}
+/*头部导航结束*/
+
+/*登录注册盒子*/
+.enter1{
+    /* display: none; */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    top: 0;
+    right: 0;
+    z-index: 15;
+    
+    display: none;
+}
+.enter_wrap{
+    width: 370px;
+    height: 280px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px gray;
+}
+.wrap_c_1{
+    font-size: 21px;
+    font-weight: 700;
+    position: absolute;
+    top: 25px;
+    left: 44px;
+}
+.wrap_c_2{
+    width: 209px;
+    height: 57px;
+    position: absolute;
+    left: 80px;
+    top: 5px;
+}
+.wrap_c_2 img{
+    width: 209px;
+}
+.c_3_1{
+    width: 270px;
+    height: 36px;
+    border: 1px solid #c1c1c1;
+    border-radius: 5px;
+    position: absolute;
+    left: 40px;
+    top: 63px;
+    padding-left: 10px;
+}
+.c_3_2{
+    width: 150px;
+    height: 36px;
+    border: 1px solid #c1c1c1;
+    border-radius: 5px;
+    position: absolute;
+    left: 40px;
+    top: 120px;
+    padding-left: 10px; 
+}
+.c_3_3{
+    width: 130px;
+    height: 38px;
+    border-radius: 5px;
+    position: absolute;
+    left: 40px;
+    top: 165px;
+    padding-left: 10px; 
+    background: #F67676;
+    border: none;
+    outline: none;
+    color: white;
+}
+.wrap_c_4{
+    width: 30px;
+    height: 30px;
+    background: white;
+    border: 1px solid #c1c1c1;
+    font-size: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    color: #c1c1c1;
+    position: absolute;
+    left: 355px;
+    top: -10px;
+}
+.wrap_c_5{
+    width: 280px;
+    height: 36px;
+    background: #FF472B;
+    text-align: center;
+    line-height: 36px;
+    border-radius: 5px;
+    position: absolute;
+    left: 45px;
+    bottom: -15px;
+    color: white;
+    
+}
+.wangji{
+	position: absolute;
+	bottom: 35px;
+right: 135px;
+color: gray;
+}

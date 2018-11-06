@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*登录注册盒子*/
+			
+			.enter1 {
+				/* display: none; */
+				position: relative;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				right: 0;
+				z-index: -1;
+				/*  display: none;*/
+			}
+			
+			.enter_wrap {
+				width: 370px;
+				height: 280px;
+				position: absolute;
+				right: 190px;
+				top: 85px;
+				margin: auto;
+				background: #fff;
+				border: 1px solid gray;
+				border-radius: 10px;
+				box-shadow: 5px 5px 5px gray;
+			}
+			
+			.wrap_c_1 {
+				font-size: 21px;
+				font-weight: 700;
+				position: absolute;
+				top: 25px;
+				left: 44px;
+			}
+			
+			.wrap_c_2 {
+				width: 209px;
+				height: 57px;
+				position: absolute;
+				left: 80px;
+				top: 5px;
+			}
+			
+			.wrap_c_2 img {
+				width: 209px;
+			}
+			
+			.c_3_1 {
+				width: 270px;
+				height: 36px;
+				border: 1px solid #c1c1c1;
+				border-radius: 5px;
+				position: absolute;
+				left: 40px;
+				top: 63px;
+				padding-left: 10px;
+			}
+			
+			.c_3_2 {
+				width: 150px;
+				height: 36px;
+				border: 1px solid #c1c1c1;
+				border-radius: 5px;
+				position: absolute;
+				left: 40px;
+				top: 120px;
+				padding-left: 10px;
+			}
+			
+			.c_3_3 {
+				width: 130px;
+				height: 38px;
+				border-radius: 5px;
+				position: absolute;
+				left: 40px;
+				top: 165px;
+				padding-left: 10px;
+				background: #F67676;
+				border: none;
+				outline: none;
+				color: white;
+			}
+			
+			#yanzhengma {
+				left: 190px;
+				top: 175px;
+			}
+			
+			.wrap_c_4 {
+				width: 30px;
+				height: 30px;
+				background: white;
+				border: 1px solid #c1c1c1;
+				font-size: 30px;
+				border-radius: 50%;
+				text-align: center;
+				line-height: 30px;
+				color: #c1c1c1;
+				position: absolute;
+				left: 355px;
+				top: -10px;
+			}
+			
+			.wrap_c_5 {
+				width: 280px;
+				height: 36px;
+				background: #FF472B;
+				text-align: center;
+				line-height: 36px;
+				border-radius: 5px;
+				position: absolute;
+				left: 45px;
+				bottom: -15px;
+				color: white;
+			}
+			
+			.wangji {
+				position: absolute;
+				bottom: 35px;
+				right: 135px;
+				color: gray;
+			}
+			
+			#title_wrap {
+				width: 100%;
+				height: auto;
+				overflow: hidden;
+				background: #fff;
+			}
+			
+			#title {
+				width: 1100px;
+				height: auto;
+				margin: 0 auto;
+			}
+			
+			#logo {
+				float: left;
+				margin: 20px 0;
+			}
+			
+			#foot {
+				position: absolute;
+				bottom: 0;
+				background: #fff;
+			}
+			
+			.zhuce_wrap {
+				display: none;
+			}
+			
+			#fanhuidenglu {
+				position: absolute;
+				bottom: 35px;
+				left: 50%;
+				transform: translateX(-50%);
+				color: gray;
+			}
+			
+			#zhucephone {
+				width: 120px;
+				height: 32px;
+				position: absolute;
+				left: 40px;
+				top: 175px;
+				border-radius: 5px;
+				border: 1px solid #c1c1c1;
+				padding-left: 10px;
+				line-height: 32px;
+			}
+		</style>
+		<link rel="stylesheet" href="css/common.css" />
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js">
+		</script>
+	</head>
+	<div id="title_wrap">
+		<div id="title">
+			<div id="logo" style="text-align: center;">
+				<img src="img/logo-ef4e6a15ac.png" alt="" style="margin-bottom:5px;width: 176px;display: block;"> 全球精选 正品特卖
+			</div>
+		</div>
+	</div>
+
+	<body style="background: url(img/15336314334586.jpg) no-repeat -300px 65px;">
+		<!--登录注册页面-->
+		<div class="enter1" id="enter">
+
+			<div class="enter_wrap" id="denglu_wrap">
+				<div class="wrap_c_1">
+					欢迎登录
+				</div>
+				<div class="wrap_c_2">
+					<img src="img/login-c344517a04.png" alt="">
+				</div>
+				<div class="wrap_c_3">
+					<input type="text" placeholder="请输入账号" class="c_3_1" id="phonema">
+					<input type="password" placeholder="请输入密码" class="c_3_2" id="passma">
+					<button class="c_3_3" id="phone2">二维码登录</button>
+				</div>
+				<div class="wrap_c_4" id="wrap_c_4">×</div>
+				<div class="wrap_c_5" id="godenglu">
+					立即登录
+				</div>
+				<div class="wangji">
+					<a>忘记密码</a>
+					<a>丨</a>
+					<a id="zhucebtn">注册</a>
+				</div>
+			</div>
+
+			<div class="enter_wrap zhuce_wrap" id="zhuce_wrap">
+				<p id="fanhuidenglu">
+					<a>返回登录</a>
+					<a>｜</a>
+					<a>忘记密码</a>
+				</p>
+				<div class="wrap_c_1">
+					欢迎注册
+				</div>
+				<div class="wrap_c_2">
+					<img src="img/login-c344517a04.png" alt="">
+				</div>
+				<div class="wrap_c_3">
+					<input type="text" placeholder="请输入账号" class="c_3_1" id="zhucetxt1">
+					<input type="password" placeholder="请输入密码" class="c_3_2" id="zhucetxt2">
+					<input type="text" name="" id="zhucephone" value="" placeholder="请输入手机号码" />
+					<button class="c_3_3" id="yanzhengma">发送短信验证码</button>
+				</div>
+				<div class="wrap_c_4">×</div>
+				<div class="wrap_c_5" id="gozhuce">
+					立即注册
+				</div>
+
+			</div>
+		</div>
+		<!--登录注册盒子结束-->
+
+		<div id="foot" style="width: 100%;height: 100px;text-align: center;line-height: 100px;">
+			Copyright 2008-2018 vip.com，All Rights Reserved ICP证：粤 B2-20080329
+		</div>
+
+		<script type="text/javascript">
+			//注册框
+			var oGozhuce = document.getElementById('gozhuce');
+			var oZhucetxt1 = document.getElementById('zhucetxt1');
+			var oZhucetxt2 = document.getElementById('zhucetxt2');
+			// var reg=/^zhaozhuolin$/;
+			var reg = /^[a-zA-Z0-9_-]{4,16}$/;
+			oGozhuce.onclick = function() {
+				var struse = oZhucetxt1.value;
+				var strpass = oZhucetxt2.value;
+				var result = reg.test(struse);
+				var result1 = reg.test(strpass);
+				if(result == true && result1 == true) {
+setLocal(struse,strpass);
+					alert("注册成功");
+					oZhucetxt1.value = '';
+					oZhucetxt2.value = '';
+					oDengluBox.style.display = 'block';
+				oZhuceBox.style.display = 'none';
+					
+				} else {
+					alert("帐号或者密码不符合规则");
+				}
+			}
+
+			function setLocal(strUseName, strPassWord) {
+				localStorage.setItem("UseName",strUseName);
+				localStorage.setItem("PassWord",strPassWord);
+			}
+
+//			登录框
+			var oPhonema=document.getElementById('phonema');
+			var oPhonema1=document.getElementById('phone2');
+			  var oEn=document.getElementById('wrap_c_4');
+			  var oGo=document.getElementById('godenglu');
+			  var oEnter=document.getElementById('enter');
+			   var oPassma=document.getElementById('passma');
+
+			// 
+
+			// 
+			// 
+			oGo.onclick=function(){
+			var str=oPhonema.value;
+			var str1=oPassma.value;
+			var result=reg.test(str);
+			var result1=reg.test(str1);
+				var typename=localStorage.getItem("UseName");
+			var typepass=localStorage.getItem("PassWord");
+			if(result==true&&result1==true){
+				if(str==typename){
+					if(str1==typepass){
+						window.location.href="index.html";
+					}else{
+					alert("密码错误");
+					return;
+				}
+				}else{
+					alert("用户名不存在");
+					return;
+				}	
+			}
+			}
+
+			var oZhucebtn = document.getElementById('zhucebtn');
+			var oZhuceBox = document.getElementById('zhuce_wrap');
+			var oDengluBox = document.getElementById('denglu_wrap');
+			var returndenglu = document.getElementById('fanhuidenglu');
+			oZhucebtn.onclick = function() {
+				oDengluBox.style.display = 'none';
+				oZhuceBox.style.display = 'block';
+			}
+			returndenglu.onclick = function() {
+				oDengluBox.style.display = 'block';
+				oZhuceBox.style.display = 'none';
+			}
+		</script>
+	</body>
+
+</html>

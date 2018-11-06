@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/header.css" />
+	</head>
+	<body>
+		<!--头部文字开始-->
+		<div class="header_wrap">
+			<div class="header">
+				按  <strong>Ctrl + D</strong>  ,把省钱快报放入收藏夹，优惠券信息一手掌握！
+			</div>
+		</div>
+		<!--头部文字结束-->
+		
+		
+		
+		<!--头部搜索栏开始-->
+		<div class="header_top_wrap">
+			<div class="header_top">
+			<div class="logo" onclick="javascript:window.open('index.html?');">
+                <img src="img/logo-ef4e6a15ac.png" alt="">
+            </div>	
+            <div class="search">
+            	<input type="text" name="" id="" value="请输入关键词" />
+            <button class="btn">搜索</button>
+            <img src="img/search-btn-1e49dbf095.png" alt="">
+            </div>
+            <div class="smalllogo">
+            	<ul>
+            		<li><img src="img/slogan-icon-1-a61c191904.png" alt="">
+            		<p>正品好货</p>
+            		</li>
+            		<li><img src="img/slogan-icon-2-6cacea570c.png" alt="">
+            		<p>人工筛选</p>
+            		</li>
+            		<li><img src="img/slogan-icon-3-743e48e40e.png" alt="">
+            		<p>专家优惠券</p>
+            		</li>
+            		<li><img src="img/slogan-icon-4-2b2d3a03d0.png" alt="">
+            		<p>全场包邮</p>
+            		</li>
+            	</ul>
+            </div>
+			</div>
+		</div>
+		<!--头部搜索结束-->
+		
+<!--头部导航开始-->	
+<div class="nav_wrap">
+	<div class="nav">
+		<div class="nav_pic">
+			<img src="img/jxtj-d869de79ec.png" alt="">
+		</div>
+		<div class="nav_list">
+			<ul>
+				<li>9块9包邮</li>
+				<li>排行榜</li>
+				<li>信息咨询</li>
+				<li>手机版</li>
+			</ul>
+		</div>
+		<div class="enter">
+			<ul>
+				<li id="ent">登录</li>
+				<li>丨</li>
+				<li>注册</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!--头部导航结束-->
+
+
+		<!--登录注册页面-->
+		<div class="enter1" id="enter">
+
+        <div class="enter_wrap">
+            <div class="wrap_c_1">
+                欢迎登录
+            </div>
+            <div class="wrap_c_2">
+                <img src="img/login-c344517a04.png" alt="">
+            </div>
+            <div class="wrap_c_3">
+                <input type="text" placeholder="请输入账号" class="c_3_1" id="phonema">
+                <input type="text" placeholder="请输入密码" class="c_3_2" id="passma">
+                <button class="c_3_3" id="phone2">发送短信验证码</button>
+            </div>
+            <div class="wrap_c_4" id="wrap_c_4">×</div>
+            <div class="wrap_c_5" id="godenglu">
+                立即登录
+            </div>
+            <div class="wangji"><a>忘记密码</a><a>丨</a><a>注册</a></div>
+        </div>
+    </div>
+    <!--登录注册盒子结束-->
+    
+    <script type="text/javascript">
+    	//登录
+   //登录框
+   var oPhonema=document.getElementById('phonema');
+var oPhonema1=document.getElementById('phone2');
+    var oEn=document.getElementById('wrap_c_4');
+    var oGo=document.getElementById('godenglu');
+    var oEnter=document.getElementById('enter');
+     var oPassma=document.getElementById('passma');
+    var reg=/^[a-zA-Z0-9_-]{4,16}$/;
+ ent.onclick=function(){
+ 	oEnter.style.display='block';
+ }
+ oEn.onclick=function(){
+ 	oEnter.style.display='none';
+ }
+  oGo.onclick=function(){
+var str=oPhonema.value;
+var str1=oPassma.value;
+var result=reg.test(str);
+var result1=reg.test(str1);
+if(result==true&&result1==true){
+	oEnter.style.display="none";
+}else{
+	alert("账号或者密码输入错误，请重新进行登录");
+}
+
+
+  	
+  }
+//  ent.onclick=function(){
+//      enter.style.display='block';
+//  }
+//  oEn.onclick=function(){
+//      enter.style.display='none';
+//  }
+
+    
+    
+//  短信验证码
+
+
+    </script>
+	</body>
+</html>

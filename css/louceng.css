@@ -1,0 +1,231 @@
+html, body, div, ul, li, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, form, input, textarea, th, td, select {
+    margin: 0;
+    padding: 0;
+}
+*{box-sizing: border-box;}
+html, body {
+    min-height: 100%;
+}
+
+body {
+    font-family: "Microsoft YaHei";
+    font-size:14px;
+    color:#333;
+}
+h1, h2, h3, h4, h5, h6{font-weight:normal;}
+ul,ol {
+    list-style: none;
+}
+
+img {
+    border: none;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: #232323;
+}
+
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+input, textarea {
+    outline: none;
+    border: none;
+}
+
+textarea {
+    resize: none;
+    overflow: auto;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: ".";
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+    overflow:hidden;
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.tl {
+    text-align: left;
+}
+
+.tc {
+    text-align: center
+}
+
+.tr {
+    text-align: right;
+}
+
+.ellipse {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.inline{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+.screen-banner {
+    overflow: hidden;
+    position: relative;
+}
+
+
+.all-screen {
+    top: 0;
+    position: absolute;
+    transition: top 0.5s;
+}
+ul{
+    position: absolute;
+    right: 50px;
+    list-style: none;
+    top:50%;
+    transform: translateY(-50%);
+}
+li{
+    width: 10px;
+    height: 10px;
+    background: rgb(0, 0, 0,.7);
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.now{
+    background: lime;
+}
+.sc-1{
+    width: 100%;
+    height: 40px;
+    background: #444444;
+    color: #FFA248;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+}
+
+.sc-3{
+    width: 1100px;
+    height: 120px;
+    margin:  0 auto;
+    overflow: hidden;
+}
+.sc-4 a{
+    display: inline-block;
+    width: 137px;
+    height: 105px;
+    color: #c1c1c1;
+    float: left;
+    text-align: center;
+}
+.sc-4{
+    width: 1150px;
+}
+.sc-4 a>img{
+    width: 60px;
+    height: 60px;
+    margin-top: 15px;
+}
+.sc-5{
+    width: 100%;
+    height: 363px;
+}
+.sc-6{
+    width: 1100px;
+    height: 363px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.sc-7 a{
+    display: inline-block;
+    width: 260px;
+    height: 363px;
+    margin-right: 18px;
+    position: relative;
+    float: left;
+    border: 1px solid #c1c1c1;
+    background: white;
+}
+.sc-7{
+    width: 1150px;
+}
+.sc-7>a>img{
+    width: 258px;
+    height: 260px;
+}
+.sc-7>a span{
+    display: inline-block;
+    width: 34px;
+    height: 16px;
+    background: #FFA248;
+    color: white;
+    line-height: 16px;
+    text-align: center;
+    position: absolute;
+    left: 5px;
+    top: 245px;
+}
+.sc-7>a .txt2{
+    font-size: 12px;
+    color: gray;
+    position: absolute;
+    left: 50px;
+    top: 245px;
+}
+.sc-7>a .txt3{
+    color: #c1c1c1;
+    position: absolute;
+    left: 5px;
+    top: 275px;
+}
+.sc-7>a .txt4{
+    position: absolute;
+    right: 5px;
+    top: 275px; 
+    color: red;
+    
+}
+.sc-7>a .txt5{
+    position: absolute;
+    left: 5px;
+    top: 335px;
+}
+.sc-7>a .txt6{
+    position: absolute;
+    left: 50px;
+    top: 335px;
+    font-size: 25px;
+    color: red;
+    margin-top: -10px;
+}
+.sc-7>a .txt7{
+    position: absolute;
+    left: 195px;
+    top: 335px;
+    background: #FFA248;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    font-size: 12px;
+}

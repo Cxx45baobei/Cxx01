@@ -1,0 +1,48 @@
+/*悬浮框开始*/
+.xuanfu_wrap{
+position: fixed;
+right: 50px;
+bottom: 100px;
+
+}
+.xuanfu .car{
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background: #FF472B;
+	border-radius: 10px;
+	color: #fff;
+}
+.xuanfu>div{
+		width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	border-radius: 10px;
+	background: #fff;
+position: relative;
+overflow: hidden;
+}
+.xuanfu>div>img{
+	width: 22px;
+	margin: 10px 0 0 0;
+}
+.xuanfu>div>p{
+	width: 50px;
+	height: 50px;
+	background: #fff;
+	position: absolute;
+	left: 0;
+	top: 50px;
+	border-radius: 10px;
+	line-height: 50px;
+	font-size: 12px;
+}
+.xuanfu>div:hover p{
+	transform: translateY(-50px);
+	transition: all 1s;
+}
+/*悬浮框结束*/
+
+

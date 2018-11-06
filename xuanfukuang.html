@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/xuanfukuang.css" />
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js">
+			
+		</script>
+	</head>
+	<body>
+		<!--悬浮框开始-->
+		<div class="xuanfu_wrap">
+			<div class="xuanfu">
+				<div style="margin-bottom: 20px;" class="car">
+					购物车
+				</div>
+				<div><img src="img/back-to-top-c70d1930e3.png" alt="">
+				<p id="return">返回顶部</p>
+				</div>
+				<div style="background: #FFAAAB;"><img src="img/gender-f-active-46c05d0ff9.png" alt="">
+				<p>女装</p>
+				</div>
+				<div><img src="img/gender-m-61efbbc3fb.png" alt="">
+				<p>男装</p>
+				</div>
+			</div>
+		</div>
+			<!--悬浮框结束-->
+			
+			
+			
+		<script type="text/javascript">
+				var oReturn = document.getElementById('return');
+	window.onscroll = function() {
+//		var scrolltop = document.documentElement.scrollTop || document.body.scrollTop;
+		oReturn.onclick = function() {
+			var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+			timer = setInterval(function() {
+				if(scrollTop <= 0) {
+					clearInterval(timer);
+				}
+				scrollTop -= 100;
+				document.documentElement.scrollTop = document.body.scrollTop = scrollTop;
+			}, 30)
+		}
+		
+	}
+		</script>
+	</body>
+</html>
